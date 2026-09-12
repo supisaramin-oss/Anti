@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <defs>
+    <!-- Soft gradients -->
+    <linearGradient id="melodyPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff758c" />
+      <stop offset="100%" stop-color="#ff7eb3" />
+    </linearGradient>
+    <linearGradient id="softWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fff0f5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Element 1: Cute My Melody Bunny Face with Pink Hood & Bow -->
+  <g transform="translate(30, 25)">
+    <!-- Hood Ears -->
+    <!-- Left Ear -->
+    <path d="M 0 15 C -8 -5, -2 -22, 6 -20 C 14 -18, 12 -2, 8 15 Z" fill="#ff7eb3" opacity="0.32" />
+    <!-- Right Ear (folded cute tip) -->
+    <path d="M 16 15 C 18 -6, 26 -20, 34 -15 C 40 -10, 30 2, 24 15 Z" fill="#ff7eb3" opacity="0.32" />
+    <!-- Face Hood Base -->
+    <ellipse cx="12" cy="18" rx="19" ry="17" fill="#ff7eb3" opacity="0.32" />
+    <!-- White Face Inside Hood -->
+    <ellipse cx="12" cy="20" rx="14" ry="12" fill="#ffffff" opacity="0.45" />
+    <!-- Eyes -->
+    <circle cx="7" cy="19" r="1.6" fill="#832746" opacity="0.4" />
+    <circle cx="17" cy="19" r="1.6" fill="#832746" opacity="0.4" />
+    <!-- Cute Oval Yellowish Nose -->
+    <ellipse cx="12" cy="22" rx="1.5" ry="1.2" fill="#fbbf24" opacity="0.5" />
+    <!-- Cute Melody Ribbon / Flower Bow near ear -->
+    <g transform="translate(0, 4) scale(0.6)">
+      <circle cx="0" cy="0" r="4.5" fill="#ffffff" opacity="0.6" />
+      <circle cx="-5" cy="0" r="3.5" fill="#f43f5e" opacity="0.4" />
+      <circle cx="5" cy="0" r="3.5" fill="#f43f5e" opacity="0.4" />
+      <circle cx="0" cy="0" r="2" fill="#fbbf24" opacity="0.6" />
+    </g>
+  </g>
+
+  <!-- Element 2: Sweet Strawberry -->
+  <g transform="translate(125, 35) scale(0.85)">
+    <!-- Berry body -->
+    <path d="M 0 -2 C 8 -2, 10 10, 0 16 C -10 10, -8 -2, 0 -2 Z" fill="#ff4d79" opacity="0.28" />
+    <!-- Green Leaves -->
+    <path d="M -5 -4 C -2 -7, 2 -7, 5 -4 C 3 -2, -3 -2, -5 -4 Z" fill="#10b981" opacity="0.3" />
+    <!-- Berry seeds -->
+    <circle cx="-3" cy="4" r="0.8" fill="#ffffff" opacity="0.4" />
+    <circle cx="3" cy="5" r="0.8" fill="#ffffff" opacity="0.4" />
+    <circle cx="0" cy="9" r="0.8" fill="#ffffff" opacity="0.4" />
+  </g>
+
+  <!-- Element 3: Cute Heart 💖 -->
+  <g transform="translate(45, 115) scale(0.8)">
+    <path d="M 0 4 C -6 -6, -16 2, 0 14 C 16 2, 6 -6, 0 4 Z" fill="#ff758c" opacity="0.3" />
+  </g>
+
+  <!-- Element 4: Cherry Blossom Flower 🌸 -->
+  <g transform="translate(120, 110)">
+    <circle cx="0" cy="-5" r="3.5" fill="#ffb1c8" opacity="0.35" />
+    <circle cx="5" cy="-2" r="3.5" fill="#ffb1c8" opacity="0.35" />
+    <circle cx="3" cy="4" r="3.5" fill="#ffb1c8" opacity="0.35" />
+    <circle cx="-3" cy="4" r="3.5" fill="#ffb1c8" opacity="0.35" />
+    <circle cx="-5" cy="-2" r="3.5" fill="#ffb1c8" opacity="0.35" />
+    <circle cx="0" cy="0" r="2" fill="#fff" opacity="0.5" />
+  </g>
+
+  <!-- Sparkles ✨ and Dots -->
+  <!-- Sparkle 1 -->
+  <path d="M 90 20 Q 90 26, 96 26 Q 90 26, 90 32 Q 90 26, 84 26 Q 90 26, 90 20 Z" fill="#f472b6" opacity="0.35" />
+  <!-- Sparkle 2 -->
+  <path d="M 20 90 Q 20 94, 24 94 Q 20 94, 20 98 Q 20 94, 16 94 Q 20 94, 20 90 Z" fill="#ff85a2" opacity="0.3" />
+  <!-- Little cute pastel dots -->
+  <circle cx="85" cy="85" r="2.2" fill="#ff758c" opacity="0.25" />
+  <circle cx="150" cy="145" r="1.8" fill="#f43f5e" opacity="0.22" />
+  <circle cx="10" cy="140" r="1.6" fill="#f472b6" opacity="0.2" />
+  <circle cx="140" cy="80" r="2" fill="#ffaec5" opacity="0.25" />
+</svg>

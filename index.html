@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="แฟ้มสะสมผลงาน (Portfolio) นางสาวศุภิสรา เพ็ชรสังคาต นักศึกษาสาขาเทคโนโลยีธุรกิจดิจิทัล (Digital Business Technology) วิทยาลัยอาชีวศึกษานครศรีธรรมราช">
+  <meta name="keywords" content="Portfolio, ศุภิสรา เพ็ชรสังคาต, Digital Business Technology, เทคโนโลยีธุรกิจดิจิทัล, วิทยาลัยอาชีวศึกษานครศรีธรรมราช, UI/UX, Web Development, IoT, AI">
+  <meta name="author" content="ศุภิสรา เพ็ชรสังคาต (Supissara Phetsangkat)">
+  <title>ศุภิสรา เพ็ชรสังคาต | สาขา Digital Business Technology - วิทยาลัยอาชีวศึกษานครศรีธรรมราช</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>">
+
+  <!-- Bootstrap 5.3.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS Design System -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+  <!-- ========================================================================
+       Header & Navigation Bar
+       ======================================================================== -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top custom-navbar" aria-label="Main Navigation">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand brand-logo" href="#hero">
+        <span class="text-gradient">Supissara</span>.Dev
+        <span class="brand-dot"></span>
+      </a>
+
+      <!-- Right controls: Theme Toggle & Hamburger -->
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <!-- Dark/Light Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" type="button" aria-label="Toggle Theme" title="สลับโหมดการแสดงผล">
+          <i id="themeIcon" class="bi bi-moon-stars-fill text-danger"></i>
+        </button>
+
+        <!-- CTA Resume Download (Desktop) -->
+        <a href="assets/resume.pdf" download="Supissara_Resume.pdf" class="btn btn-primary-custom d-none d-md-inline-flex btn-sm py-2 px-3">
+          <i class="bi bi-file-earmark-arrow-down"></i> Resume
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler border-0 p-1 text-main shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-primary"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#hero">หน้าแรก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">เกี่ยวกับฉัน</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">สิ่งที่ชอบ &amp; กิจกรรม</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">ทักษะความสามารถ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">ผลงาน</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">ประวัติ &amp; โครงงาน</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">ติดต่อ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <header id="hero" class="hero-section">
+    <!-- Ambient glowing backgrounds -->
+    <div class="glow-blob-1"></div>
+    <div class="glow-blob-2"></div>
+
+    <div class="container position-relative" style="z-index: 1;">
+      <div class="row align-items-center g-5">
+        <!-- Left Column: Bio & Call to Actions -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <!-- Availability Badge -->
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>🎀 นักศึกษา Digital Business Technology • วอศ.นครศรีธรรมราช</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="hero-title">
+            สวัสดีค่ะ, ฉัน <br>
+            <span class="text-gradient">ศุภิสรา เพ็ชรสังคาต</span>
+          </h1>
+
+          <!-- Dynamic Typing Text -->
+          <div class="h3 fw-bold mb-3 text-secondary">
+            ความสนใจ: <span id="typingText" class="text-gradient-secondary">Digital Business Technology</span><span class="typing-cursor">|</span>
+          </div>
+
+          <!-- Description -->
+          <p class="hero-desc">
+            นักศึกษาสาขาเทคโนโลยีธุรกิจดิจิทัล วิทยาลัยอาชีวศึกษานครศรีธรรมราช มีความหลงใหลในการออกแบบ UI/UX, การพัฒนาเว็บไซต์, เทคโนโลยี AI และการสร้างสรรค์โปรเจกต์นวัตกรรม IoT เพื่อประยุกต์ใช้งานจริง
+          </p>
+
+          <!-- Buttons & Social Links -->
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+            <a href="#hobbies" class="btn-primary-custom">
+              <i class="bi bi-heart-pulse-fill"></i> ดูสิ่งที่ชอบ &amp; กิจกรรม
+            </a>
+            <a href="#projects" class="btn-outline-custom">
+              <i class="bi bi-grid-fill"></i> ดูผลงานของฉัน
+            </a>
+          </div>
+
+          <!-- Social Channels -->
+          <div class="d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
+            <span class="text-muted small fw-semibold">ช่องทางติดต่อ:</span>
+            <div class="social-links">
+              <a href="mailto:supissara.dev@gmail.com" class="social-btn" title="Email" aria-label="Send Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub" aria-label="GitHub Profile">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#contact" class="social-btn" title="Contact Form" aria-label="Contact Form">
+                <i class="bi bi-chat-heart-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Profile Showcase with Floating Badges -->
+        <div class="col-lg-5">
+          <div class="hero-image-wrapper">
+            <!-- Floating Badge Top Right -->
+            <div class="floating-badge badge-top-right">
+              <div class="skill-icon-wrapper" style="width: 34px; height: 34px; font-size: 1rem; background: var(--primary-gradient);">
+                <i class="bi bi-mortarboard-fill text-white"></i>
+              </div>
+              <div class="text-start">
+                <div class="fw-bold small text-main">Digital Business Tech 🌸</div>
+                <div class="text-muted" style="font-size: 0.72rem;">วอศ.นครศรีธรรมราช</div>
+              </div>
+            </div>
+
+            <!-- Profile Avatar Card -->
+            <div class="profile-card">
+              <img src="assets/images/profile.jpg" alt="ศุภิสรา เพ็ชรสังคาต - Profile Avatar" class="profile-img">
+            </div>
+
+            <!-- Floating Badge Bottom Left -->
+            <div class="floating-badge badge-bottom-left">
+              <div class="skill-icon-wrapper" style="width: 34px; height: 34px; font-size: 1rem; background: var(--secondary-gradient);">
+                <i class="bi bi-heart-fill text-white"></i>
+              </div>
+              <div class="text-start">
+                <div class="fw-bold small text-main">UI/UX &amp; Web Project 💖</div>
+                <div class="text-muted" style="font-size: 0.72rem;">นักศึกษาผู้มีความมุ่งมั่น</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       About Me & Stats Section
+       ======================================================================== -->
+  <!-- ========================================================================
+       About Me & Stats Section
+       ======================================================================== -->
+  <section id="about" class="section-padding position-relative">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-person-lines-fill"></i> เกี่ยวกับตัวฉัน</span>
+        <h2 class="section-title">มุ่งมั่นสร้างสรรค์ <span class="text-gradient">Digital Solution &amp; Innovation</span></h2>
+        <p class="section-subtitle">ผสานทักษะด้านเทคโนโลยีและการออกแบบ UI/UX เพื่อสร้างสรรค์เว็บไซต์และนวัตกรรมดิจิทัลที่ใช้งานได้จริง</p>
+      </div>
+
+      <!-- About Info & Story -->
+      <div class="row g-4 align-items-stretch mb-5">
+        <div class="col-lg-7">
+          <div class="about-card h-100">
+            <h3 class="h4 fw-bold mb-3">ประวัติและความมุ่งมั่น</h3>
+            <p class="about-desc mb-3">
+              สวัสดีค่ะ ดิฉัน <strong>นางสาวศุภิสรา เพ็ชรสังคาต</strong> นักศึกษาสาขา<strong>เทคโนโลยีธุรกิจดิจิทัล (Digital Business Technology)</strong> วิทยาลัยอาชีวศึกษานครศรีธรรมราช มีความสนใจและมุ่งมั่นในการเรียนรู้ด้านการออกแบบ UI/UX, การพัฒนาเว็บไซต์สมัยใหม่, การประยุกต์ใช้ AI และโปรเจกต์ IoT
+            </p>
+            <p class="about-desc mb-4">
+              ปรัชญาในการเรียนรู้ของดิฉันคือ <strong>"Creativity meets Digital Innovation"</strong> — ผสมผสานความคิดสร้างสรรค์ การจัดวางองค์ประกอบศิลป์ที่สวยงาม และเทคโนโลยีดิจิทัลเข้าด้วยกัน เพื่อพัฒนาโปรเจกต์ที่ตอบโจทย์ผู้ใช้งานและสามารถนำไปต่อยอดสู่การทำงานจริง
+            </p>
+
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="info-item">
+                  <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                  <div>
+                    <div class="info-label text-muted small">ที่อยู่</div>
+                    <div class="info-value fw-bold">นครศรีธรรมราช, ประเทศไทย</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="info-item">
+                  <div class="info-icon"><i class="bi bi-translate"></i></div>
+                  <div>
+                    <div class="info-label text-muted small">ภาษา</div>
+                    <div class="info-value fw-bold">ไทย (Native), อังกฤษ (Basic-Intermediate)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="info-item">
+                  <div class="info-icon"><i class="bi bi-envelope-check-fill"></i></div>
+                  <div>
+                    <div class="info-label text-muted small">อีเมล</div>
+                    <div class="info-value fw-bold">supissara.dev@gmail.com</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="info-item">
+                  <div class="info-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                  <div>
+                    <div class="info-label text-muted small">สถานศึกษา</div>
+                    <div class="info-value fw-bold">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Fast Stats Cards -->
+        <div class="col-lg-5">
+          <div class="row g-3 h-100">
+            <div class="col-6">
+              <div class="stat-card d-flex flex-column justify-content-center">
+                <div class="stat-number text-gradient"><span class="counter-val" data-target="6">0</span>+</div>
+                <div class="stat-label">โปรเจกต์ &amp; เว็บไซต์</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card d-flex flex-column justify-content-center">
+                <div class="stat-number text-gradient-secondary"><span class="counter-val" data-target="6">0</span></div>
+                <div class="stat-label">กิจกรรม &amp; ทักษะเด่น</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card d-flex flex-column justify-content-center">
+                <div class="stat-number text-gradient-secondary"><span class="counter-val" data-target="100">0</span>%</div>
+                <div class="stat-label">ความตั้งใจ &amp; พร้อมเรียนรู้</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card d-flex flex-column justify-content-center">
+                <div class="stat-number text-gradient"><span class="counter-val" data-target="1">0</span></div>
+                <div class="stat-label">วอศ.นครศรีธรรมราช</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Hobbies & Interests Section
+       สิ่งที่ชอบ & กิจกรรมยามว่าง (Hobbies & Interests)
+       Profile: ศุภิสรา เพ็ชรสังคาต - สาขา Digital Business Technology
+       วิทยาลัยอาชีวศึกษานครศรีธรรมราช
+       ======================================================================== -->
+  <section id="hobbies" class="section-padding hobbies-section position-relative">
+    <div class="container">
+      <div class="hobbies-container">
+        <!-- Ambient Background Glows for Pink-Purple Theme -->
+        <div class="hobbies-ambient-glow glow-top-left"></div>
+        <div class="hobbies-ambient-glow glow-bottom-right"></div>
+        <div class="hobbies-ambient-glow glow-center-accent"></div>
+
+        <!-- Section Header -->
+        <div class="text-center mb-5 position-relative" style="z-index: 2;">
+          <div class="d-inline-flex flex-wrap justify-content-center align-items-center gap-2 mb-3">
+            <span class="section-tag"><i class="bi bi-heart-pulse-fill"></i> สิ่งที่ชอบ &amp; กิจกรรมยามว่าง</span>
+            <span class="student-badge"><i class="bi bi-person-circle"></i> ศุภิสรา เพ็ชรสังคาต</span>
+            <span class="student-badge-alt"><i class="bi bi-laptop-fill"></i> Digital Business Technology</span>
+            <span class="student-badge-college"><i class="bi bi-building-fill"></i> วิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+          </div>
+
+          <h2 class="h2 fw-bold hobbies-main-title">
+            สิ่งที่ชอบ &amp; กิจกรรมยามว่าง <span class="text-gradient-pink-purple">(Hobbies &amp; Interests)</span>
+          </h2>
+
+          <p class="hobbies-main-subtitle mx-auto">
+            กิจกรรมที่ช่วยพัฒนาทักษะด้านเทคโนโลยี ความคิดสร้างสรรค์ และสร้างแรงบันดาลใจในการเรียนและการทำงาน
+          </p>
+        </div>
+
+        <!-- 6 Cards Grid (Desktop 3 cols, Tablet 2 cols, Mobile 1 col) -->
+        <div class="row g-4 position-relative" style="z-index: 2;">
+          <!-- Card 1: UI/UX Design -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="hobby-card hobby-reveal" data-delay="100">
+              <div class="hobby-card-top">
+                <div class="hobby-icon-box icon-uiux">
+                  <i class="bi bi-palette2"></i>
+                </div>
+                <span class="hobby-number">01</span>
+              </div>
+              <h3 class="hobby-title">ออกแบบ UI/UX</h3>
+              <p class="hobby-desc">
+                ชอบออกแบบหน้าเว็บไซต์และแอปพลิเคชัน ทดลองจัด Layout สี ตัวอักษร และองค์ประกอบต่าง ๆ เพื่อให้ใช้งานง่ายและสวยงาม
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag"><i class="bi bi-bookmark-fill me-1"></i>Figma</span>
+                <span class="hobby-tag">UI/UX</span>
+                <span class="hobby-tag">Prototype</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Web & Programming -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="hobby-card hobby-reveal" data-delay="200">
+              <div class="hobby-card-top">
+                <div class="hobby-icon-box icon-web">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <span class="hobby-number">02</span>
+              </div>
+              <h3 class="hobby-title">เขียนเว็บไซต์และโปรแกรม</h3>
+              <p class="hobby-desc">
+                สนใจการพัฒนาเว็บไซต์และฝึกเขียนโปรแกรม โดยเฉพาะ HTML, CSS, Bootstrap, JavaScript รวมถึง PHP และการเชื่อมต่อฐานข้อมูล MySQL
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag"><i class="bi bi-bookmark-fill me-1"></i>HTML</span>
+                <span class="hobby-tag">CSS</span>
+                <span class="hobby-tag">PHP</span>
+                <span class="hobby-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Tech Projects -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="hobby-card hobby-reveal" data-delay="300">
+              <div class="hobby-card-top">
+                <div class="hobby-icon-box icon-project">
+                  <i class="bi bi-cpu-fill"></i>
+                </div>
+                <span class="hobby-number">03</span>
+              </div>
+              <h3 class="hobby-title">พัฒนาโปรเจกต์เทคโนโลยี</h3>
+              <p class="hobby-desc">
+                ชอบทดลองสร้างโปรเจกต์จากสิ่งที่เรียน เช่น ระบบฐานข้อมูล ระบบคำนวณด้วย PHP และเว็บไซต์ที่สามารถนำไปประยุกต์ใช้งานจริง
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag"><i class="bi bi-bookmark-fill me-1"></i>PHP</span>
+                <span class="hobby-tag">Database</span>
+                <span class="hobby-tag">Web Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: AI & New Tech -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="hobby-card hobby-reveal" data-delay="400">
+              <div class="hobby-card-top">
+                <div class="hobby-icon-box icon-ai">
+                  <i class="bi bi-stars"></i>
+                </div>
+                <span class="hobby-number">04</span>
+              </div>
+              <h3 class="hobby-title">เรียนรู้ AI และเทคโนโลยีใหม่</h3>
+              <p class="hobby-desc">
+                สนใจการนำ AI มาช่วยในการเรียน การออกแบบ การสร้างสื่อ และการพัฒนาเว็บไซต์ รวมถึงการใช้เครื่องมือ AI เพื่อเพิ่มประสิทธิภาพในการทำงาน
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag"><i class="bi bi-bookmark-fill me-1"></i>AI</span>
+                <span class="hobby-tag">Prompt</span>
+                <span class="hobby-tag">Digital Tools</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: IoT & Smart Devices -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="hobby-card hobby-reveal" data-delay="500">
+              <div class="hobby-card-top">
+                <div class="hobby-icon-box icon-iot">
+                  <i class="bi bi-motherboard-fill"></i>
+                </div>
+                <span class="hobby-number">05</span>
+              </div>
+              <h3 class="hobby-title">IoT และอุปกรณ์อัจฉริยะ</h3>
+              <p class="hobby-desc">
+                สนใจ Internet of Things และการควบคุมอุปกรณ์ผ่านระบบดิจิทัล โดยเฉพาะการพัฒนาโปรเจกต์พัดลมอัจฉริยะด้วย ESP32-CAM และ Blynk
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag"><i class="bi bi-bookmark-fill me-1"></i>IoT</span>
+                <span class="hobby-tag">ESP32-CAM</span>
+                <span class="hobby-tag">Blynk</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Digital Media & Infographics -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="hobby-card hobby-reveal" data-delay="600">
+              <div class="hobby-card-top">
+                <div class="hobby-icon-box icon-media">
+                  <i class="bi bi-vector-pen"></i>
+                </div>
+                <span class="hobby-number">06</span>
+              </div>
+              <h3 class="hobby-title">สร้างสื่อดิจิทัลและอินโฟกราฟิก</h3>
+              <p class="hobby-desc">
+                ชอบออกแบบโปสเตอร์ อินโฟกราฟิก และสื่อประชาสัมพันธ์ โดยเน้นการนำเสนอข้อมูลให้เข้าใจง่าย สวยงาม และเหมาะสมกับกลุ่มเป้าหมาย
+              </p>
+              <div class="hobby-tags">
+                <span class="hobby-tag"><i class="bi bi-bookmark-fill me-1"></i>Canva</span>
+                <span class="hobby-tag">Infographic</span>
+                <span class="hobby-tag">Presentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Skills & Tech Stack Section
+       ======================================================================== -->
+  <section id="skills" class="section-padding bg-surface-subtle">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-cpu-fill"></i> ความสามารถทางเทคนิค</span>
+        <h2 class="section-title">ทักษะและ <span class="text-gradient">Tech Stack</span> ที่เชี่ยวชาญ</h2>
+        <p class="section-subtitle">เลือกใช้เทคโนโลยีที่ทันสมัย มีประสิทธิภาพ และตรงกับความต้องการของระบบ</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1: Frontend Development -->
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-group-card">
+            <div class="skill-group-title">
+              <div class="skill-icon-wrapper">
+                <i class="bi bi-window-sidebar"></i>
+              </div>
+              <div>Frontend Engineering</div>
+            </div>
+
+            <!-- Progress Bars -->
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>HTML5 / Semantic Web</span>
+                <span class="text-info fw-bold">95%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>CSS3 / SCSS / Bootstrap 5</span>
+                <span class="text-info fw-bold">92%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>JavaScript (ES6+) / TypeScript</span>
+                <span class="text-info fw-bold">88%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>React.js / Next.js Framework</span>
+                <span class="text-info fw-bold">85%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top border-secondary border-opacity-25">
+              <div class="small text-muted mb-2 fw-bold">ทักษะเสริมในกลุ่มนี้:</div>
+              <div class="d-flex flex-wrap">
+                <span class="skill-pill"><i class="bi bi-lightning-charge text-warning"></i> Vite</span>
+                <span class="skill-pill"><i class="bi bi-brush text-primary"></i> TailwindCSS</span>
+                <span class="skill-pill"><i class="bi bi-arrow-repeat text-success"></i> Responsive Layout</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Backend & Database -->
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-group-card">
+            <div class="skill-group-title">
+              <div class="skill-icon-wrapper" style="background: var(--secondary-gradient);">
+                <i class="bi bi-hdd-network-fill"></i>
+              </div>
+              <div>Backend &amp; Database</div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Node.js / Express</span>
+                <span class="text-info fw-bold">86%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 86%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>RESTful APIs &amp; GraphQL</span>
+                <span class="text-info fw-bold">90%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>PostgreSQL / MySQL</span>
+                <span class="text-info fw-bold">82%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 82%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>MongoDB / NoSQL</span>
+                <span class="text-info fw-bold">80%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top border-secondary border-opacity-25">
+              <div class="small text-muted mb-2 fw-bold">ทักษะเสริมในกลุ่มนี้:</div>
+              <div class="d-flex flex-wrap">
+                <span class="skill-pill"><i class="bi bi-shield-lock text-danger"></i> JWT &amp; Auth</span>
+                <span class="skill-pill"><i class="bi bi-fire text-warning"></i> Firebase</span>
+                <span class="skill-pill"><i class="bi bi-database-check text-info"></i> Prisma ORM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: UI/UX & Tools -->
+        <div class="col-lg-4 col-md-12">
+          <div class="skill-group-card">
+            <div class="skill-group-title">
+              <div class="skill-icon-wrapper" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div>UI/UX &amp; DevOps Tools</div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Figma UI/UX &amp; Wireframing</span>
+                <span class="text-info fw-bold">92%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Git &amp; GitHub Version Control</span>
+                <span class="text-info fw-bold">90%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>Docker &amp; Containerization</span>
+                <span class="text-info fw-bold">75%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-header">
+                <span>CI/CD &amp; Cloud Deployment (Vercel/AWS)</span>
+                <span class="text-info fw-bold">84%</span>
+              </div>
+              <div class="custom-progress">
+                <div class="custom-progress-bar" style="width: 84%;"></div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top border-secondary border-opacity-25">
+              <div class="small text-muted mb-2 fw-bold">ทักษะเสริมในกลุ่มนี้:</div>
+              <div class="d-flex flex-wrap">
+                <span class="skill-pill"><i class="bi bi-speedometer2 text-info"></i> SEO &amp; Speed</span>
+                <span class="skill-pill"><i class="bi bi-universal-access text-primary"></i> Accessibility</span>
+                <span class="skill-pill"><i class="bi bi-terminal text-success"></i> Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Portfolio / Projects Section
+       ======================================================================== -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-collection-play-fill"></i> แฟ้มผลงานคัดสรร</span>
+        <h2 class="section-title">ผลงานเด่น <span class="text-gradient">Featured Projects</span></h2>
+        <p class="section-subtitle">ผลงานออกแบบและพัฒนาที่ผ่านมา สามารถกรองดูตามประเภทและคลิกดูรายละเอียดเชิงลึกได้</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-btn-group">
+        <button class="filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+        <button class="filter-btn" data-filter="web">Web Application</button>
+        <button class="filter-btn" data-filter="mobile">Mobile &amp; FinTech</button>
+        <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="row g-4" id="projectGrid">
+        
+        <!-- Project 1: Velocity SaaS Analytics -->
+        <div class="col-lg-4 col-md-6 project-item" data-category="web ui">
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/project-1.jpg" alt="Velocity SaaS Analytics Dashboard" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="Velocity SaaS Analytics Dashboard"
+                  data-category-name="Web Application / SaaS"
+                  data-desc="แพลตฟอร์มแดชบอร์ดบริหารจัดการข้อมูลธุรกิจและสถิติการใช้งานแบบ Real-time พร้อมกราฟวิเคราะห์รายได้ Traffic และตัวชี้วัดประสิทธิภาพ (KPI) ออกแบบด้วย Glassmorphism UI พร้อมสลับ Dark Mode สมบูรณ์แบบ"
+                  data-img="assets/images/project-1.jpg"
+                  data-tags="React,Bootstrap 5,Chart.js,Node.js,PostgreSQL"
+                  data-demo="https://example.com/demo-analytics"
+                  data-code="https://github.com/example/velocity-saas"
+                  title="ดูรายละเอียดผลงาน">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Web Application • SaaS</div>
+              <h3 class="project-title">Velocity Analytics Dashboard</h3>
+              <p class="project-desc">ระบบแดชบอร์ดวิเคราะห์สถิติธุรกิจและทราฟฟิกแบบเรียลไทม์ รองรับกราฟแบบโต้ตอบและการจัดการสิทธิ์ผู้ใช้</p>
+              <div class="project-tags">
+                <span class="tag-badge">Bootstrap 5</span>
+                <span class="tag-badge">JavaScript</span>
+                <span class="tag-badge">Chart.js</span>
+                <span class="tag-badge">REST API</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-link p-0 text-decoration-none project-action-link" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="Velocity SaaS Analytics Dashboard"
+                  data-category-name="Web Application / SaaS"
+                  data-desc="แพลตฟอร์มแดชบอร์ดบริหารจัดการข้อมูลธุรกิจและสถิติการใช้งานแบบ Real-time พร้อมกราฟวิเคราะห์รายได้ Traffic และตัวชี้วัดประสิทธิภาพ (KPI) ออกแบบด้วย Glassmorphism UI พร้อมสลับ Dark Mode สมบูรณ์แบบ"
+                  data-img="assets/images/project-1.jpg"
+                  data-tags="React,Bootstrap 5,Chart.js,Node.js,PostgreSQL"
+                  data-demo="https://example.com/demo-analytics"
+                  data-code="https://github.com/example/velocity-saas">
+                  ดูรายละเอียด <i class="bi bi-arrow-right"></i>
+                </button>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-action-link">Live Demo <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: PayFlow Mobile FinTech -->
+        <div class="col-lg-4 col-md-6 project-item" data-category="mobile ui">
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/project-2.svg" alt="PayFlow Mobile FinTech & Crypto" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="PayFlow Pro - Mobile FinTech &amp; Crypto App"
+                  data-category-name="Mobile App / UI UX"
+                  data-desc="แอปพลิเคชันกระเป๋าเงินดิจิทัลและซื้อขายคริปโทเคอร์เรนซี ออกแบบ UI เน้นความปลอดภัย เรียบหรู ใช้งานง่าย มีระบบแจ้งเตือนการทำธุรกรรมแบบทันทีและการวิเคราะห์พอร์ตการลงทุนส่วนบุคคล"
+                  data-img="assets/images/project-2.svg"
+                  data-tags="React Native,Figma,TypeScript,FinTech,Web3"
+                  data-demo="https://example.com/demo-payflow"
+                  data-code="https://github.com/example/payflow-app"
+                  title="ดูรายละเอียดผลงาน">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Mobile App • FinTech</div>
+              <h3 class="project-title">PayFlow Pro FinTech &amp; Crypto</h3>
+              <p class="project-desc">แอปกระเป๋าเงินดิจิทัลและการจัดการสินทรัพย์ พร้อมระบบวิเคราะห์พอร์ตการลงทุนและกราฟราคาคริปโทแบบเรียลไทม์</p>
+              <div class="project-tags">
+                <span class="tag-badge">Figma UI/UX</span>
+                <span class="tag-badge">Mobile Responsive</span>
+                <span class="tag-badge">FinTech</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-link p-0 text-decoration-none project-action-link" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="PayFlow Pro - Mobile FinTech &amp; Crypto App"
+                  data-category-name="Mobile App / UI UX"
+                  data-desc="แอปพลิเคชันกระเป๋าเงินดิจิทัลและซื้อขายคริปโทเคอร์เรนซี ออกแบบ UI เน้นความปลอดภัย เรียบหรู ใช้งานง่าย มีระบบแจ้งเตือนการทำธุรกรรมแบบทันทีและการวิเคราะห์พอร์ตการลงทุนส่วนบุคคล"
+                  data-img="assets/images/project-2.svg"
+                  data-tags="React Native,Figma,TypeScript,FinTech,Web3"
+                  data-demo="https://example.com/demo-payflow"
+                  data-code="https://github.com/example/payflow-app">
+                  ดูรายละเอียด <i class="bi bi-arrow-right"></i>
+                </button>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-action-link">Case Study <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: SynapseAI Creative Studio -->
+        <div class="col-lg-4 col-md-6 project-item" data-category="web ui">
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/project-3.svg" alt="SynapseAI Creative Studio" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="SynapseAI Creative Studio Platform"
+                  data-category-name="Web Application / AI SaaS"
+                  data-desc="แพลตฟอร์มสตูดิโอสร้างคอนเทนต์ด้วยปัญญาประดิษฐ์ (Generative AI) รองรับการสร้างภาพ ข้อความ และไปป์ไลน์ Automation เชื่อมต่อ API โมเดลล้ำสมัยด้วยอินเทอร์เฟซสไตล์ Cyberpunk ที่ใช้งานง่ายและตอบสนองเร็ว"
+                  data-img="assets/images/project-3.svg"
+                  data-tags="Next.js,TailwindCSS,OpenAI API,WebSockets,Python"
+                  data-demo="https://example.com/demo-synapse"
+                  data-code="https://github.com/example/synapse-ai"
+                  title="ดูรายละเอียดผลงาน">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Web Application • AI SaaS</div>
+              <h3 class="project-title">SynapseAI Creative Studio</h3>
+              <p class="project-desc">สตูดิโอสำหรับสร้างสรรค์ภาพและข้อความด้วย AI พร้อมระบบจัดการ Prompt และ Node Workflow แบบมินิมอล</p>
+              <div class="project-tags">
+                <span class="tag-badge">AI Integration</span>
+                <span class="tag-badge">Next.js</span>
+                <span class="tag-badge">Node.js</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-link p-0 text-decoration-none project-action-link" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="SynapseAI Creative Studio Platform"
+                  data-category-name="Web Application / AI SaaS"
+                  data-desc="แพลตฟอร์มสตูดิโอสร้างคอนเทนต์ด้วยปัญญาประดิษฐ์ (Generative AI) รองรับการสร้างภาพ ข้อความ และไปป์ไลน์ Automation เชื่อมต่อ API โมเดลล้ำสมัยด้วยอินเทอร์เฟซสไตล์ Cyberpunk ที่ใช้งานง่ายและตอบสนองเร็ว"
+                  data-img="assets/images/project-3.svg"
+                  data-tags="Next.js,TailwindCSS,OpenAI API,WebSockets,Python"
+                  data-demo="https://example.com/demo-synapse"
+                  data-code="https://github.com/example/synapse-ai">
+                  ดูรายละเอียด <i class="bi bi-arrow-right"></i>
+                </button>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-action-link">Live Demo <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Lumina Minimalist Store -->
+        <div class="col-lg-4 col-md-6 project-item" data-category="web">
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/project-4.svg" alt="Lumina Minimalist E-Commerce" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="Lumina Minimalist E-Commerce Platform"
+                  data-category-name="Web Application / E-Commerce"
+                  data-desc="ร้านค้าออนไลน์ดีไซน์พรีเมียมสไตล์มินิมอล รองรับระบบตะกร้าสินค้าแบบไดนามิก การชำระเงินผ่าน Stripe/PromptPay ตลอดจนระบบค้นหาและฟิลเตอร์สินค้าที่ลื่นไหล พร้อมคะแนน Google Lighthouse 98+"
+                  data-img="assets/images/project-4.svg"
+                  data-tags="HTML5,CSS3,Bootstrap 5,Stripe API,SEO"
+                  data-demo="https://example.com/demo-lumina"
+                  data-code="https://github.com/example/lumina-store"
+                  title="ดูรายละเอียดผลงาน">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Web Application • E-Commerce</div>
+              <h3 class="project-title">Lumina Minimalist Gear</h3>
+              <p class="project-desc">แพลตฟอร์มอีคอมเมิร์ซสำหรับสินค้าไอทีและดีไซน์ระดับพรีเมียม โหลดเร็วด้วย Best Practice ด้าน SEO และ Responsive</p>
+              <div class="project-tags">
+                <span class="tag-badge">Bootstrap 5</span>
+                <span class="tag-badge">E-Commerce</span>
+                <span class="tag-badge">Speed 98+</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-link p-0 text-decoration-none project-action-link" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="Lumina Minimalist E-Commerce Platform"
+                  data-category-name="Web Application / E-Commerce"
+                  data-desc="ร้านค้าออนไลน์ดีไซน์พรีเมียมสไตล์มินิมอล รองรับระบบตะกร้าสินค้าแบบไดนามิก การชำระเงินผ่าน Stripe/PromptPay ตลอดจนระบบค้นหาและฟิลเตอร์สินค้าที่ลื่นไหล พร้อมคะแนน Google Lighthouse 98+"
+                  data-img="assets/images/project-4.svg"
+                  data-tags="HTML5,CSS3,Bootstrap 5,Stripe API,SEO"
+                  data-demo="https://example.com/demo-lumina"
+                  data-code="https://github.com/example/lumina-store">
+                  ดูรายละเอียด <i class="bi bi-arrow-right"></i>
+                </button>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-action-link">Live Demo <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Apex Design System Kit -->
+        <div class="col-lg-4 col-md-6 project-item" data-category="ui">
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/project-3.svg" alt="Apex Design System Kit" class="project-img" style="filter: hue-rotate(90deg);">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="Apex Design System &amp; UI Library"
+                  data-category-name="UI/UX Design / Component Kit"
+                  data-desc="ระบบ Design Tokens และ UI Component Library สำหรับองค์กร ช่วยให้นักพัฒนาและดีไซเนอร์ทำงานร่วมกันได้อย่างรวดเร็ว ประกอบด้วยมากกว่า 120+ คอมโพเนนต์ที่รองรับ Accessibility (WCAG 2.1 AA)"
+                  data-img="assets/images/project-3.svg"
+                  data-tags="Figma,Storybook,Design Tokens,Accessibility"
+                  data-demo="https://example.com/demo-apex"
+                  data-code="https://github.com/example/apex-system"
+                  title="ดูรายละเอียดผลงาน">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">UI/UX Design • System</div>
+              <h3 class="project-title">Apex Design System Kit</h3>
+              <p class="project-desc">ชุด UI Kit และ Component Library สากลสำหรับทีมพัฒนา รองรับทั้งโหมดสว่างและมืดตามมาตรฐาน WCAG</p>
+              <div class="project-tags">
+                <span class="tag-badge">Figma Tokens</span>
+                <span class="tag-badge">Storybook</span>
+                <span class="tag-badge">WCAG AA</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-link p-0 text-decoration-none project-action-link" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="Apex Design System &amp; UI Library"
+                  data-category-name="UI/UX Design / Component Kit"
+                  data-desc="ระบบ Design Tokens และ UI Component Library สำหรับองค์กร ช่วยให้นักพัฒนาและดีไซเนอร์ทำงานร่วมกันได้อย่างรวดเร็ว ประกอบด้วยมากกว่า 120+ คอมโพเนนต์ที่รองรับ Accessibility (WCAG 2.1 AA)"
+                  data-img="assets/images/project-3.svg"
+                  data-tags="Figma,Storybook,Design Tokens,Accessibility"
+                  data-demo="https://example.com/demo-apex"
+                  data-code="https://github.com/example/apex-system">
+                  ดูรายละเอียด <i class="bi bi-arrow-right"></i>
+                </button>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-action-link">Case Study <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Pulse Health Tracker -->
+        <div class="col-lg-4 col-md-6 project-item" data-category="mobile web">
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/images/project-2.svg" alt="Pulse Health & Wellness Tracker" class="project-img" style="filter: hue-rotate(240deg);">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="Pulse Health &amp; Activity Tracker"
+                  data-category-name="Mobile &amp; Web App"
+                  data-desc="เว็บแอปพลิเคชันบันทึกและติดตามสุขภาพรายวัน คำนวณแคลอรี่ บันทึกการนอนหลับ และเชื่อมต่อข้อมูลจาก Smartwatch พร้อมกราฟสรุปพฤติกรรมประจำสัปดาห์แบบอินเตอร์แอคทีฟ"
+                  data-img="assets/images/project-2.svg"
+                  data-tags="PWA,Bootstrap 5,Vanilla JS,IndexedDB,Service Workers"
+                  data-demo="https://example.com/demo-pulse"
+                  data-code="https://github.com/example/pulse-tracker"
+                  title="ดูรายละเอียดผลงาน">
+                  <i class="bi bi-arrows-fullscreen"></i>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Mobile Web • PWA</div>
+              <h3 class="project-title">Pulse Health &amp; Fitness</h3>
+              <p class="project-desc">เว็บแอปติดตามสุขภาพและกิจกรรมฟิตเนสรายวัน ใช้งานได้แบบ Offline ผ่าน Progressive Web App (PWA)</p>
+              <div class="project-tags">
+                <span class="tag-badge">PWA</span>
+                <span class="tag-badge">JavaScript</span>
+                <span class="tag-badge">HealthTech</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-link p-0 text-decoration-none project-action-link" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="Pulse Health &amp; Activity Tracker"
+                  data-category-name="Mobile &amp; Web App"
+                  data-desc="เว็บแอปพลิเคชันบันทึกและติดตามสุขภาพรายวัน คำนวณแคลอรี่ บันทึกการนอนหลับ และเชื่อมต่อข้อมูลจาก Smartwatch พร้อมกราฟสรุปพฤติกรรมประจำสัปดาห์แบบอินเตอร์แอคทีฟ"
+                  data-img="assets/images/project-2.svg"
+                  data-tags="PWA,Bootstrap 5,Vanilla JS,IndexedDB,Service Workers"
+                  data-demo="https://example.com/demo-pulse"
+                  data-code="https://github.com/example/pulse-tracker">
+                  ดูรายละเอียด <i class="bi bi-arrow-right"></i>
+                </button>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-action-link">Live Demo <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Experience & Education Section (Timeline)
+       ======================================================================== -->
+  <section id="experience" class="section-padding bg-surface-subtle">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-mortarboard-fill"></i> เส้นทางการเรียนรู้ &amp; โครงงาน</span>
+        <h2 class="section-title">โครงงานนวัตกรรม &amp; <span class="text-gradient">ประวัติการศึกษา</span></h2>
+        <p class="section-subtitle">ไทม์ไลน์บันทึกการเรียนรู้ การฝึกทักษะ และผลงานโครงงานในสาขาเทคโนโลยีธุรกิจดิจิทัล</p>
+      </div>
+
+      <div class="row g-5">
+        <!-- Academic & Project Experience Timeline -->
+        <div class="col-lg-6">
+          <h3 class="h4 fw-bold mb-4 d-flex align-items-center gap-2">
+            <i class="bi bi-laptop text-primary"></i> ผลงานโครงงาน &amp; กิจกรรมวิชาการ
+          </h3>
+          <div class="timeline">
+            <!-- Timeline 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2024 - ปัจจุบัน 🚀</span>
+                <h4 class="timeline-title">พัฒนาโครงงานนวัตกรรม IoT &amp; ระบบฐานข้อมูล</h4>
+                <div class="timeline-company">สาขาเทคโนโลยีธุรกิจดิจิทัล • วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+                <p class="timeline-desc">
+                  ออกแบบและพัฒนาโครงงานพัดลมอัจฉริยะด้วย ESP32-CAM ควบคุมผ่านแพลตฟอร์ม Blynk และพัฒนาเว็บไซต์ระบบคำนวณและฐานข้อมูล MySQL ด้วยภาษา PHP
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2023 - 2024 💻</span>
+                <h4 class="timeline-title">ฝึกทักษะการออกแบบ UI/UX &amp; พัฒนาเว็บไซต์ Responsive</h4>
+                <div class="timeline-company">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+                <p class="timeline-desc">
+                  ฝึกออกแบบ Wireframe และ Interactive Prototype บน Figma พร้อมฝึกเขียนโปรแกรมหน้าเว็บด้วย HTML5, CSS3, JavaScript และ Bootstrap 5
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">2022 - 2023 🎨</span>
+                <h4 class="timeline-title">สร้างสื่อดิจิทัล อินโฟกราฟิก &amp; กิจกรรมสร้างสรรค์</h4>
+                <div class="timeline-company">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+                <p class="timeline-desc">
+                  สร้างสรรค์สื่อดิจิทัล โปสเตอร์ประชาสัมพันธ์ และอินโฟกราฟิกด้วย Canva สำหรับนำเสนอข้อมูลให้เข้าใจง่าย สวยงาม และตรงตามกลุ่มเป้าหมาย
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="col-lg-6">
+          <h3 class="h4 fw-bold mb-4 d-flex align-items-center gap-2">
+            <i class="bi bi-mortarboard text-danger"></i> ประวัติการศึกษา (Education Journey)
+          </h3>
+          <div class="timeline">
+            <!-- Timeline 1: Current Education -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--accent-hotpink); box-shadow: 0 0 10px var(--accent-hotpink);"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">ปัจจุบัน (กำลังศึกษา) 🌸</span>
+                <h4 class="timeline-title">สาขาเทคโนโลยีธุรกิจดิจิทัล (Digital Business Technology)</h4>
+                <div class="timeline-company">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+                <p class="timeline-desc">
+                  กำลังศึกษาด้านเทคโนโลยีธุรกิจดิจิทัล มุ่งเน้นการออกแบบ UI/UX, การพัฒนาเว็บไซต์และแอปพลิเคชัน, เทคโนโลยี AI สำหรับธุรกิจ, และการพัฒนานวัตกรรมดิจิทัล
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline 2: High Vocational Certificate -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--accent-hotpink); box-shadow: 0 0 10px var(--accent-hotpink);"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">ระดับ ปวส. 🎀</span>
+                <h4 class="timeline-title">ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) สาขาเทคโนโลยีธุรกิจดิจิทัล</h4>
+                <div class="timeline-company">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+                <p class="timeline-desc">
+                  ศึกษาเทคโนโลยีสารสนเทศเพื่อการจัดการธุรกิจ, การผลิตสื่อมัลติมีเดีย, การจัดการฐานข้อมูล, และการประยุกต์ใช้โปรแกรมดิจิทัลในงานธุรกิจ
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline 3: Vocational Certificate -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--accent-hotpink); box-shadow: 0 0 10px var(--accent-hotpink);"></div>
+              <div class="timeline-card">
+                <span class="timeline-year">ระดับ ปวช. 🎨</span>
+                <h4 class="timeline-title">ประกาศนียบัตรวิชาชีพ (ปวช.) สาขาคอมพิวเตอร์ธุรกิจ / สารสนเทศ</h4>
+                <div class="timeline-company">วิทยาลัยอาชีวศึกษานครศรีธรรมราช</div>
+                <p class="timeline-desc">
+                  ปูพื้นฐานการใช้งานคอมพิวเตอร์และระบบสารสนเทศ, การออกแบบกราฟิกเบื้องต้น, ระบบเครือข่าย, และตรรกะการคำนวณทางคอมพิวเตอร์
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Contact Section
+       ======================================================================== -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-chat-heart-fill"></i> ติดต่อสอบถาม</span>
+        <h2 class="section-title">ร่วมแลกเปลี่ยน &amp; <span class="text-gradient">ติดต่อฉัน</span></h2>
+        <p class="section-subtitle">สนใจแลกเปลี่ยนความรู้ สอบถามข้อมูลโครงงาน หรือพูดคุยเรื่องเทคโนโลยีดิจิทัล ส่งข้อความมาได้ตลอดเวลาค่ะ</p>
+      </div>
+
+      <div class="row g-5 align-items-stretch">
+        <!-- Contact Information Cards -->
+        <div class="col-lg-5">
+          <div class="contact-card h-100">
+            <h3 class="h4 fw-bold mb-4">ช่องทางติดต่อ</h3>
+            
+            <div class="contact-info-box">
+              <div class="contact-info-icon">
+                <i class="bi bi-envelope-at-fill"></i>
+              </div>
+              <div>
+                <div class="text-muted small">อีเมลสำหรับติดต่อ</div>
+                <a href="mailto:supissara.dev@gmail.com" class="fw-bold text-main text-decoration-none">supissara.dev@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-box">
+              <div class="contact-info-icon">
+                <i class="bi bi-mortarboard-fill text-pink"></i>
+              </div>
+              <div>
+                <div class="text-muted small">สาขาและสถานศึกษา</div>
+                <span class="fw-bold text-main">Digital Business Technology • วิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+              </div>
+            </div>
+
+            <div class="contact-info-box">
+              <div class="contact-info-icon">
+                <i class="bi bi-line text-success"></i>
+              </div>
+              <div>
+                <div class="text-muted small">LINE ID</div>
+                <span class="fw-bold text-main">@supissara_p</span>
+              </div>
+            </div>
+
+            <div class="contact-info-box">
+              <div class="contact-info-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <div class="text-muted small">สถานที่ตั้ง</div>
+                <span class="fw-bold text-main">วิทยาลัยอาชีวศึกษานครศรีธรรมราช, จ.นครศรีธรรมราช</span>
+              </div>
+            </div>
+
+            <div class="pt-3 border-top border-secondary border-opacity-25 mt-4">
+              <div class="text-muted small mb-3">ตอบกลับข้อความและอีเมลอย่างรวดเร็ว</div>
+              <div class="social-links">
+                <a href="mailto:supissara.dev@gmail.com" class="social-btn" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub"><i class="bi bi-github"></i></a>
+                <a href="#hero" class="social-btn" title="กลับขึ้นด้านบน"><i class="bi bi-arrow-up-circle-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="col-lg-7">
+          <div class="contact-card h-100">
+            <h3 class="h4 fw-bold mb-4">ส่งข้อความติดต่อ (Send a Message)</h3>
+
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <!-- Name -->
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-custom" id="senderName" placeholder="ชื่อ-นามสกุลของคุณ" required>
+                    <label for="senderName"><i class="bi bi-person me-1"></i> ชื่อของคุณ *</label>
+                    <div class="invalid-feedback">กรุณากรอกชื่อของคุณ</div>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-custom" id="senderEmail" placeholder="name@example.com" required>
+                    <label for="senderEmail"><i class="bi bi-envelope me-1"></i> อีเมลของคุณ *</label>
+                    <div class="invalid-feedback">กรุณากรอกอีเมลที่ถูกต้อง</div>
+                  </div>
+                </div>
+
+                <!-- Subject -->
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-custom" id="senderSubject" placeholder="หัวข้อเรื่อง" required>
+                    <label for="senderSubject"><i class="bi bi-bookmark me-1"></i> หัวข้อเรื่อง *</label>
+                    <div class="invalid-feedback">กรุณาระบุหัวข้อเรื่อง</div>
+                  </div>
+                </div>
+
+                <!-- Project Category / Budget -->
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <select class="form-select form-control-custom" id="projectBudget" aria-label="งบประมาณโปรเจกต์">
+                      <option value="freelance" selected>โปรเจกต์ทั่วไป (Freelance)</option>
+                      <option value="webapp">พัฒนา Web Application / SaaS</option>
+                      <option value="uiux">ออกแบบ UI/UX &amp; Prototype</option>
+                      <option value="consult">ที่ปรึกษาทางเทคนิค (Consulting)</option>
+                      <option value="fulltime">รับเข้าทำงานประจำ (Full-time)</option>
+                    </select>
+                    <label for="projectBudget"><i class="bi bi-tag me-1"></i> ประเภทความร่วมมือ</label>
+                  </div>
+                </div>
+
+                <!-- Message Textarea -->
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control form-control-custom" id="senderMessage" placeholder="รายละเอียดข้อความ" style="height: 140px;" required></textarea>
+                    <label for="senderMessage"><i class="bi bi-chat-left-text me-1"></i> รายละเอียดโปรเจกต์หรือข้อความที่ต้องการส่ง *</label>
+                    <div class="invalid-feedback">กรุณากรอกข้อความที่ต้องการติดต่อ</div>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-primary-custom w-100 py-3 justify-content-center">
+                    <i class="bi bi-send-fill"></i> ส่งข้อความทันที
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <a class="brand-logo" href="#hero">
+          <span class="text-gradient">Supissara</span>.Dev
+          <span class="brand-dot"></span>
+        </a>
+
+        <div class="text-muted small">
+          &copy; 2026 ศุภิสรา เพ็ชรสังคาต (Supissara Phetsangkat). All rights reserved. ออกแบบและพัฒนาด้วยความใส่ใจ
+        </div>
+
+        <div class="d-flex gap-3">
+          <a href="#hero" class="text-muted text-decoration-none small hover-link">หน้าแรก</a>
+          <a href="#about" class="text-muted text-decoration-none small hover-link">เกี่ยวกับ</a>
+          <a href="#projects" class="text-muted text-decoration-none small hover-link">ผลงาน</a>
+          <a href="#contact" class="text-muted text-decoration-none small hover-link">ติดต่อ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Back To Top Floating Button
+       ======================================================================== -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="เลื่อนขึ้นบนสุด" title="เลื่อนขึ้นบนสุด">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- ========================================================================
+       Project Detail Modal
+       ======================================================================== -->
+  <div class="modal fade custom-modal" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span id="modalProjectCategory" class="badge bg-primary bg-opacity-25 text-info mb-1">Category</span>
+            <h4 class="modal-title fw-bold" id="modalProjectTitle">Project Title</h4>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modalProjectImg" src="" alt="Project Image" class="w-100 rounded-3 mb-4 shadow" style="max-height: 380px; object-fit: cover;">
+          
+          <h5 class="fw-bold mb-2">ภาพรวมโปรเจกต์ (Overview)</h5>
+          <p id="modalProjectDesc" class="text-muted mb-4"></p>
+
+          <h6 class="fw-bold mb-2">เทคโนโลยีที่ใช้ (Tech Stack)</h6>
+          <div id="modalProjectTags" class="d-flex flex-wrap mb-4"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+          <a id="modalProjectCodeBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm">
+            <i class="bi bi-github"></i> Source Code
+          </a>
+          <a id="modalProjectDemoBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom btn-sm">
+            <i class="bi bi-box-arrow-up-right"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Toast Notification Feedback
+       ======================================================================== -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-4" style="z-index: 1080;">
+    <div id="successToast" class="toast align-items-center text-bg-success border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center gap-2">
+          <i class="bi bi-check-circle-fill fs-5"></i>
+          <div>
+            <strong>ส่งข้อความเรียบร้อยแล้ว!</strong><br>
+            <span class="small">ขอบคุณที่ติดต่อเข้ามาค่ะ ดิฉันจะรีบตอบกลับโดยเร็วที่สุด</span>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3.3 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#111c38" />
+    </linearGradient>
+    <linearGradient id="shopAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+    <linearGradient id="prodGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad4)" rx="16"/>
+
+  <g transform="translate(60, 45)">
+    <!-- Browser Window -->
+    <rect x="0" y="0" width="680" height="360" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    <rect x="0" y="0" width="680" height="38" rx="12" fill="#1e293b"/>
+    <circle cx="20" cy="19" r="4.5" fill="#f43f5e"/>
+    <circle cx="34" cy="19" r="4.5" fill="#f59e0b"/>
+    <circle cx="48" cy="19" r="4.5" fill="#10b981"/>
+    <text x="75" y="24" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">https://lumina-store.design/collections/minimal-gear</text>
+
+    <!-- Store Header -->
+    <text x="30" y="70" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold">LUMINA</text>
+    <text x="120" y="69" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Products</text>
+    <text x="190" y="69" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">New Arrivals</text>
+    <text x="280" y="69" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Lookbook</text>
+    <rect x="570" y="55" width="80" height="24" rx="12" fill="url(#shopAccent)"/>
+    <text x="590" y="71" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">Cart (3)</text>
+
+    <!-- Hero Banner inside web -->
+    <rect x="30" y="95" width="620" height="85" rx="10" fill="#182234"/>
+    <text x="50" y="130" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="bold">Minimalist Audio Series 2026</text>
+    <text x="50" y="152" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">Engineered for pure acoustics and timeless aesthetics.</text>
+    <rect x="490" y="120" width="135" height="34" rx="6" fill="#f8fafc"/>
+    <text x="520" y="142" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Explore Now →</text>
+
+    <!-- Product Grid -->
+    <!-- Card 1 -->
+    <rect x="30" y="195" width="190" height="145" rx="8" fill="#131d2e"/>
+    <rect x="45" y="205" width="160" height="70" rx="6" fill="url(#prodGrad1)"/>
+    <circle cx="125" cy="240" r="22" fill="#475569"/>
+    <text x="45" y="296" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Lumina Pro Wireless</text>
+    <text x="45" y="312" fill="#f97316" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">$249.00</text>
+    <rect x="165" y="296" width="25" height="25" rx="4" fill="#1e293b"/>
+    <text x="173" y="313" fill="#ffffff" font-size="12">+</text>
+
+    <!-- Card 2 -->
+    <rect x="245" y="195" width="190" height="145" rx="8" fill="#131d2e"/>
+    <rect x="260" y="205" width="160" height="70" rx="6" fill="url(#prodGrad1)"/>
+    <circle cx="340" cy="240" r="22" fill="#3b82f6" opacity="0.8"/>
+    <text x="260" y="296" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Acoustic Smart Speaker</text>
+    <text x="260" y="312" fill="#f97316" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">$189.00</text>
+    <rect x="380" y="296" width="25" height="25" rx="4" fill="#1e293b"/>
+    <text x="388" y="313" fill="#ffffff" font-size="12">+</text>
+
+    <!-- Card 3 -->
+    <rect x="460" y="195" width="190" height="145" rx="8" fill="#131d2e"/>
+    <rect x="475" y="205" width="160" height="70" rx="6" fill="url(#prodGrad1)"/>
+    <circle cx="555" cy="240" r="22" fill="#10b981" opacity="0.8"/>
+    <text x="475" y="296" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Desk Charging Pad M2</text>
+    <text x="475" y="312" fill="#f97316" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">$79.00</text>
+    <rect x="595" y="296" width="25" height="25" rx="4" fill="#1e293b"/>
+    <text x="603" y="313" fill="#ffffff" font-size="12">+</text>
+  </g>
+</svg>

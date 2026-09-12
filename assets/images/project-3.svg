@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#181329" />
+    </linearGradient>
+    <linearGradient id="neonPinkViolet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="aiCardGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#2e1065" />
+    </linearGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad3)" rx="16"/>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="200" r="180" fill="#a855f7" opacity="0.16" filter="url(#glow3)"/>
+  <circle cx="680" cy="100" r="130" fill="#ec4899" opacity="0.14" filter="url(#glow3)"/>
+
+  <!-- AI App Window Frame -->
+  <g transform="translate(60, 40)">
+    <!-- Main Window -->
+    <rect x="0" y="0" width="680" height="370" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Title Bar -->
+    <rect x="0" y="0" width="680" height="42" rx="14" fill="#1e293b"/>
+    <circle cx="22" cy="21" r="5" fill="#f43f5e"/>
+    <circle cx="38" cy="21" r="5" fill="#f59e0b"/>
+    <circle cx="54" cy="21" r="5" fill="#10b981"/>
+    <rect x="230" y="10" width="220" height="22" rx="6" fill="#0f172a"/>
+    <text x="255" y="25" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">✦ SynapseAI Studio - Gen-4</text>
+
+    <!-- Sidebar -->
+    <rect x="0" y="42" width="160" height="328" fill="#141d2e"/>
+    <rect x="16" y="60" width="128" height="30" rx="8" fill="url(#neonPinkViolet)"/>
+    <text x="32" y="80" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">+ New Generation</text>
+
+    <text x="20" y="125" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">MODELS</text>
+    <rect x="16" y="136" width="128" height="26" rx="6" fill="#1e293b"/>
+    <text x="26" y="153" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="10">⚡ GPT-Vision Pro</text>
+    <text x="26" y="185" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">🎨 Diffusion XL</text>
+    <text x="26" y="215" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">🎙 AudioSynthesizer</text>
+
+    <!-- Main Workspace -->
+    <!-- Prompt Input Box -->
+    <rect x="180" y="60" width="480" height="60" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="195" y="86" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="12">Prompt: "Cyberpunk rooftop garden at twilight, cinematic neon volumetric lighting, 8k"</text>
+    <rect x="575" y="74" width="75" height="32" rx="6" fill="url(#neonPinkViolet)"/>
+    <text x="592" y="94" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Generate</text>
+
+    <!-- Output Showcase Grid -->
+    <rect x="180" y="135" width="230" height="150" rx="10" fill="url(#aiCardGrad)" stroke="#6366f1" stroke-width="1.5"/>
+    <circle cx="295" cy="195" r="35" fill="#a855f7" opacity="0.4"/>
+    <polygon points="265,225 325,225 295,170" fill="#ec4899" opacity="0.7"/>
+    <text x="195" y="265" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Result #01 - Seed 9281</text>
+    <text x="195" y="278" fill="#a855f7" font-family="'Segoe UI', sans-serif" font-size="9">Upscaled to 4K Ultra</text>
+
+    <rect x="430" y="135" width="230" height="150" rx="10" fill="#161f30" stroke="#334155" stroke-width="1"/>
+    <!-- Simulated visual nodes -->
+    <circle cx="480" cy="180" r="14" fill="#3b82f6"/>
+    <circle cx="580" cy="170" r="14" fill="#10b981"/>
+    <circle cx="530" cy="225" r="14" fill="#f59e0b"/>
+    <line x1="480" y1="180" x2="580" y2="170" stroke="#64748b" stroke-width="2" stroke-dasharray="3,3"/>
+    <line x1="480" y1="180" x2="530" y2="225" stroke="#64748b" stroke-width="2" stroke-dasharray="3,3"/>
+    <line x1="580" y1="170" x2="530" y2="225" stroke="#64748b" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="445" y="265" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">Workflow Node Pipeline</text>
+
+    <!-- Bottom status bar -->
+    <rect x="180" y="300" width="480" height="42" rx="8" fill="#131c2d"/>
+    <text x="195" y="325" fill="#10b981" font-family="'Segoe UI', sans-serif" font-size="11">● Generation Finished in 1.42s (VRAM: 6.8 GB / 24 GB)</text>
+    <rect x="580" y="308" width="70" height="26" rx="6" fill="#334155"/>
+    <text x="597" y="325" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-size="10">Export ↓</text>
+  </g>
+</svg>
